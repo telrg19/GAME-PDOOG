@@ -105,5 +105,11 @@ public class Perro {
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
+    
+    System.out.println("Nivel de atencion: " + p1.getAtencionPerro());
+        System.out.println("Nombre del perro: " + p1.getNombrePerro());
+        System.out.println("EXP: " + p1.getNivel());
+        System.out.println("Path del icono: " + p1.getIcono());
+    
     }
 }
