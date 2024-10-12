@@ -24,4 +24,23 @@ public class Perro {
     private int atencionPerro;
     private int nivel;
 
+    //*****************************************************************
+    // Constructors 
+    //*****************************************************************
+    public Perro(String icono, String nombre, int edad, int atencion, int nivel) {
+        this.icono = icono;
+        this.nombrePerro = nombre; 
+        this.edadPerro = edad;
+        this.atencionPerro = atencion;
+        this.nivel = nivel;
+    }
+    
+    public Perro() {
+        this(ICONO, NOMBRE, EDAD, ATENCION, NIVEL);
+    }
+
+    public Perro(Perro otro) {
+        this(otro.icono, otro.nombrePerro, otro.edadPerro, otro.atencionPerro, otro.nivel);
+    }
+
 }
