@@ -88,5 +88,22 @@ public class Perro {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
+    
+    @Override
+    public String toString() {
+        return "Perro{" + "icono='" + icono + '\'' + ", nombre='" + nombrePerro + '\'' + ", edad=" + edadPerro + ", atencion=" + atencionPerro + ", nivel=" + nivel + '}';
+    }
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Perro p1 = new Perro();
+        Perro p2 = new Perro(Perro.ICONO, "Perro feliz", 10, 20, 1);
+        Perro p3 = new Perro(p1);
+
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+    }
 }
