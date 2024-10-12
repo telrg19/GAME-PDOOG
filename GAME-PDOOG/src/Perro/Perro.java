@@ -43,4 +43,50 @@ public class Perro {
         this(otro.icono, otro.nombrePerro, otro.edadPerro, otro.atencionPerro, otro.nivel);
     }
 
+    //*****************************************************************
+    // Getters 
+    //*****************************************************************
+    public String getIcono() {
+        return icono;
+    }
+
+    public String getNombrePerro() { 
+        return nombrePerro;
+    }
+
+    public int getEdadPerro() {
+        return edadPerro;
+    }
+
+    public int getAtencionPerro() {
+        return atencionPerro;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    //*****************************************************************
+    // Setters 
+    //*****************************************************************
+    public void setIcono(String icono) {
+        this.icono = icono;
+    }
+
+    public void setNombrePerro(String nombre) { 
+        this.nombrePerro = nombre;
+    }
+
+    public void setEdadPerro(int edad) {
+        this.edadPerro = edad;
+    }
+
+    public void setAtencionPerro(int atencion) {
+        this.atencionPerro = atencion;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
 }
